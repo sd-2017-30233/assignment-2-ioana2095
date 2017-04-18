@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Books>
+    <book>
+      <Title>Povestea taietorului de bambus</Title>
+      <Author>Anonim</Author>
+      <Genre>Roman Politist</Genre>
+      <Quantity>17</Quantity>
+      <Price>123.9</Price>
+    </book>
+
+    <book>
+        <Title>O mie si una de nopti</Title>
+      <Author>Anonim</Author>
+      <Genre>Roman De Dragoste</Genre>
+      <Quantity>20</Quantity>
+      <Price>59.90</Price>
+    </book>
+	
+	<book>
+        <Title>Povestea lui Genji</Title>
+      <Author>Murasaki Shikibu</Author>
+      <Genre>Science_Fiction</Genre>
+      <Quantity>20</Quantity>
+      <Price>59.90</Price>
+    </book>
+	
+	<book>
+        <Title>Cronica celor trei regate</Title>
+      <Author>Luo Guanzhong</Author>
+      <Genre>Science_Fiction</Genre>
+      <Quantity>20</Quantity>
+      <Price>59.90</Price>
+    </book>
+	
+	<book>
+        <Title>Marginea apei</Title>
+      <Author>Luo Guanzhong</Author>
+      <Genre>Enciclopedie</Genre>
+      <Quantity>20</Quantity>
+      <Price>59.90</Price>
+    </book>
+	
+	<book>
+        <Title>Viata lui Lazarillo de Tormes </Title>
+      <Author>Anonim</Author>
+      <Genre>Roman De Dragoste</Genre>
+      <Quantity>20</Quantity>
+      <Price>59.90</Price>
+    </book>
+
+
+</Books>
