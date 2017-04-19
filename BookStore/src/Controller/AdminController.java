@@ -49,6 +49,7 @@ public class AdminController {
                         sb.add(s);
                     }
                     theView.setUser(sb);
+                    theView.functie1();
                 }
                 s1=theView.getInfo1();
                 s2=theView.getInfo2();
@@ -56,6 +57,7 @@ public class AdminController {
                 {
                     if(theModel1.updateUser(s1, s2))
                         theView.setMessage("user updated");
+                    theView.functie1();
                 }
                 if(!theView.getInfo3().equals(""))
                     s3=theView.getInfo3();
@@ -63,11 +65,13 @@ public class AdminController {
                 {
                     if(theModel1.createUser(s1, s2, s3))
                         theView.setMessage("user create");
+                    theView.functie1();
                 }
                 if(theView.getNameButton1().equals("DeleteUser"))
                 {
                     if(theModel1.deleteUser(s1))
                         theView.setMessage("user delete");
+                    theView.functie1();
                 }
                 if(theView.getNameButton1().equals("ReadBook"))
                 {
@@ -90,6 +94,7 @@ public class AdminController {
                         s+="Title: "+bm.getTitle()+" Authot: "+bm.getAuthor()+" Genre: "+bm.getGenre()+" Quantity: "+bm.getQuantity()+" Price: "+bm.getPrice();
                         theView.setValori(s);
                     }
+                    theView.functie2();
                 }
                 if(theView.getNameButton1().equals("UpdateBook"))
                 {
@@ -104,6 +109,7 @@ public class AdminController {
                         nr2=(float) 0.0;
                      if(theModel.updateBook(s1,nr1,nr2))
                         theView.setMessage("Book updated");
+                     theView.functie2();
                 }
                 if(theView.getNameButton1().equals("CreateBook"))
                 {
@@ -118,6 +124,7 @@ public class AdminController {
                         nr2=(float) 0.0;
                      if(theModel.createBook(s1, s2, s3, nr1, nr2))
                         theView.setMessage("Book creted");
+                     theView.functie2();
                 }
                 if(theView.getNameButton1().equals("DeleteBook"))
                 {
@@ -130,6 +137,7 @@ public class AdminController {
                      ReportFactory rf=new ReportFactory();
                      ReportFile rfile=rf.getReportFile(theView.getTypeReport());
                      rfile.write(b, theView.getTypeReport());
+                     theView.functie2();
                  }
             }
             catch(NullPointerException e)

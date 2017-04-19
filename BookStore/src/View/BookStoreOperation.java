@@ -280,7 +280,7 @@ public class BookStoreOperation extends javax.swing.JFrame {
             
         }
     }
-    void functie()
+    public void functie()
     {
         String[] options = new String[] {"Genre","Author","Title","Sell Book"};
         int response = JOptionPane.showOptionDialog(null, "Search books by", "Optiune",JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,null, options, options[0]);
@@ -288,17 +288,30 @@ public class BookStoreOperation extends javax.swing.JFrame {
         {
             jLabel2.setText("Genre");
             jButton1.setText("Genre");
-            
+            jLabel3.setVisible(false);
+            jTextField2.setVisible(false);
+            jTextField1.setText("");
+            jTextArea1.setText("");
+             
         }
         if(response==1)    
         {
             jLabel2.setText("Author");
             jButton1.setText("Author");
+            jLabel3.setVisible(false);
+            jTextField2.setVisible(false);
+            jTextField1.setText("");
+            jTextArea1.setText("");
         }
         if(response==2)    
         {
             jLabel2.setText("Title");
             jButton1.setText("Title");
+            jLabel3.setVisible(false);
+            jTextField2.setVisible(false);
+            jTextField1.setText("");
+            jTextArea1.setText("");
+
         }
         if(response==3)    
         {
@@ -309,6 +322,8 @@ public class BookStoreOperation extends javax.swing.JFrame {
             jTextField2.setVisible(true);
             jLabel2.setText("Title");
             jLabel3.setText("Quantity");
+            jTextField1.setText("");
+            
         }
     }
     void functieAdmin()
@@ -345,7 +360,7 @@ public class BookStoreOperation extends javax.swing.JFrame {
         }
          
     }
-    void functie1()
+    public void functie1()
     {
         String[] options = new String[] {"Read","Update","Create","Delete","Cancel"};
         int response = JOptionPane.showOptionDialog(null, "What operation you want to do?", "Optiune",JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,null, options, options[0]);
@@ -409,7 +424,7 @@ public class BookStoreOperation extends javax.swing.JFrame {
              functieAdmin();
          }
     }
-     void functie2()
+    public void functie2()
     {
         String[] options = new String[] {"Read","Update","Create","Delete","Cancel"};
         int response = JOptionPane.showOptionDialog(null, "What operation you want to do?", "Optiune",JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,null, options, options[0]);

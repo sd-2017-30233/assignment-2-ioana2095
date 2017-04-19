@@ -33,17 +33,25 @@ public class UserController {
             try{
                 s=theView.getText();
                 s1=theView.getText2();
-                if(theView.getNameButton().equals("Genre"))
+                if(theView.getNameButton().equals("Genre")){
                     theView.setList(theModel.getGenre(s),"");
-                if(theView.getNameButton().equals("Author"))
+                     theView.functie();
+                }
+                if(theView.getNameButton().equals("Author")){
                     theView.setList(theModel.getAuthor(s),"");
-                 if(theView.getNameButton().equals("Title"))
+                    theView.functie();
+                }
+                 if(theView.getNameButton().equals("Title")){
                     theView.setList(theModel.getTitle(s),"Autori care au cartea cu numele "+s);
-                 if(theView.getNameButton().equals("Sell Book"))
+                    theView.functie();
+                 }
+                 if(theView.getNameButton().equals("Sell Book")){
                      if(theModel.sellBook(s, Integer.parseInt(s1), theView.getUsername()))
                         theView.setMessage("Carte vanduta");
                      else
                          theView.setMessage("Prea putine cartii");
+                     theView.functie();
+                 }
             }
             catch(NullPointerException e)
             {
